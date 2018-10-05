@@ -1,0 +1,62 @@
+.card {
+	height:80%;
+	width:60%;
+	border: 2px solid #FFF;
+	border-radius: 4%;
+}
+
+
+.center{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.like {
+	height:40%;
+	width:40%;
+	opacity: 0.35;
+	cursor: pointer;
+	object-fit: cover;
+}
+
+@keyframes pulse{
+	0%{
+		height:40%;
+		width:40%;
+		opacity: 0.35;
+		font-size: 1pt;
+		color:#F00;
+	}
+	40%{
+		height:80%;
+		width:80%;
+		opacity: 1.0;
+		font-size: 3em;
+	}
+	100%{
+		height:40%;
+		width:40%;
+		font-size: 1pt;
+		opacity: 0.35;
+	}
+}
+
+.likes__info{
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	font-size: 1.5em !important; 
+	color: #000;
+}
+
+.like__count{
+	text-decoration: none;
+	text-transform: none;
+	color: #000;
+}
+.like-animate{
+	animation-duration: 0.8s;
+	animation-name:pulse;
+}
